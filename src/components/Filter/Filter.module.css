@@ -1,0 +1,9 @@
+.filter__input {
+  width: 200px;
+  border: 1px solid #e4e9f0;
+  border-radius: 60px;
+  padding: 10px 15px;
+}
+.filter__input:focus {
+  outline: 1px solid #e4e9f0;
+}
