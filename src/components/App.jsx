@@ -10,11 +10,10 @@ export const App = () => {
   const [contacts, setContacts] = useState(
     JSON.parse(localStorage.getItem('contacts') || [])
   );
-
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
-    localStorage.setItem('contacts', JSON.stringify(contacts));
+    localStorage.setItem(contacts, JSON.stringify(contacts));
   }, [contacts]);
 
   const addContact = event => {
