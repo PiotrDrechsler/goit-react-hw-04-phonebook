@@ -8,8 +8,9 @@ import s from '../App.module.css';
 
 export const App = () => {
   const [contacts, setContacts] = useState(
-    JSON.parse(localStorage.getItem('contacts') || '')
+    JSON.parse(localStorage.getItem('contacts')) || []
   );
+
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
